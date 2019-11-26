@@ -1,0 +1,29 @@
+<!doctype html>
+%%include('../partials/copyright.html')
+<html ⚡="" lang="en">
+<head>
+    %%include('../partials/head.html', {
+        "pageType": "blog"
+    })
+</head>
+<body>
+    %%include('../partials/header.html')
+    %%include('../partials/menu.html')
+    <main id="content" role="main" class="main blog">
+        <article>
+            <amp-img src="img/cookout-wide.jpg" width="750" height="300" layout="responsive" alt="camping image" noloading="">
+                <div placeholder="" class="loading"></div>
+            </amp-img>
+            <div>
+                <h1>Blog posts are amazing!</h1>
+                <time datetime="2017-03-31T00:00">31st March 2019</time>
+                <p>Aren't they, though? We should really have one here. Or two. A thousand! If you want to contribute an article on camping, you should. Submit a PR! Now!</p>
+            </div>
+            <a href="blog-listing.html" class="button button-white caps">Back to Blog</a>
+        </article>
+        %%include('../partials/blog-sidebar.html')
+    </main>
+    %%include('../partials/footer.html')
+</body>
+
+</html>

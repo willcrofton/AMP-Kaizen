@@ -1,0 +1,45 @@
+<!doctype html>
+%%include('../partials/copyright.html')
+<html ⚡="" lang="en">
+<head>
+    %%include('../partials/head.html', {
+        "pageType": "blog"
+    })
+</head>
+<body>
+    %%include('../partials/header.html')
+    %%include('../partials/menu.html')
+    <main id="content" role="main" class="main blog">
+        <section>
+            <h1 class="xs-hide sm-hide">featured posts</h1>
+            <article>
+                <amp-img src="img/cookout-wide.jpg" width="750" height="300" layout="responsive" alt="camping image" noloading="">
+                    <div placeholder="" class="loading"></div>
+                </amp-img>
+                <div>
+                    <h2>How to use a sleeping bag</h2>
+                    <time datetime="2019-03-31T00:00">31st March 2019</time>
+                    <p>Roll it out. On the ground. Just do it! Now get inside. Fall asleep!.</p>
+                    <p>If a mosquito comes by, swat it. If it's a bear, run away.<p>
+                    <a class="title" href="/blog-article.html">read more</a>
+                </div>
+            </article>
+            <article>
+                <amp-img src="img/cookout-wide.jpg" width="750" height="300" layout="responsive" alt="camping image" noloading="">
+                    <div placeholder="" class="loading"></div>
+                </amp-img>
+                <div>
+                    <h2>Eating dirt</h2>
+                    <time datetime="2019-04-25T00:00">25th April 2019</time>
+                    <p>Do it if you're hungry, and if you like eating dirt. If not, yuck!</p>
+                    <p>In either case, look out for worms.</p>
+                    <a class="title" href="/blog-article.html">read more</a>
+                </div>
+            </article>
+        </section>
+        %%include('../partials/blog-sidebar.html')
+    </main>
+    %%include('../partials/footer.html')
+</body>
+
+</html>

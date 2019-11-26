@@ -1,0 +1,29 @@
+{
+  "name": "amp-pwa",
+  "version": "0.1.0",
+  "description": "A simple React-based progressive web app that displays Accelerated Mobile Page (AMP) content.",
+  "private": true,
+  "license": "Apache-2.0",
+  "proxy": "http://localhost:4000",
+  "devDependencies": {
+    "express": "4.16.4",
+    "react-scripts": "2.1.3",
+    "sw-precache": "5.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "4.2.1",
+    "react": "16.7.0",
+    "react-bootstrap": "0.32.4",
+    "react-dom": "16.7.0",
+    "react-router": "4.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp manifest.webmanifest build/ && cp src/icon.png build/ && sw-precache --config=sw-precache-config.json --navigateFallback='/' --templateFilePath=service-worker.tmpl",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}
